@@ -1,9 +1,10 @@
 package edu.wctc;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PaintCalculator {
+public class PaintCalculator implements Serializable {
     private List<Room> roomList = new ArrayList<>();
 
     public void addRoom(double length, double width, double height) {

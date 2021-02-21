@@ -1,10 +1,11 @@
 package edu.wctc;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Room {
+public class Room implements Serializable {
     private List<Wall> wallList = new ArrayList<>();
 
     public Room(double width, double length, double height) {
